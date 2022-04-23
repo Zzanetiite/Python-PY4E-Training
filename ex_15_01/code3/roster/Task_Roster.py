@@ -1,7 +1,7 @@
 import json
 import sqlite3
 
-conn = sqlite3.connect('rosterdb.sqlite')
+conn = sqlite3.connect('TaskRoster.sqlite')
 cur = conn.cursor()
 
 # Do some setup
@@ -30,7 +30,7 @@ CREATE TABLE Member (
 
 fname = input('Enter file name: ')
 if len(fname) < 1:
-    fname = 'roster_data_sample.json'
+    fname = 'roster_data.json'
 
 # [
 #   [ "Charley", "si110", 1 ],
